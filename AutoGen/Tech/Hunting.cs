@@ -119,11 +119,10 @@ namespace Eco.Mods.TechTree
             1,
             1,
             1,
-            1,
         };
         public override int RequiredPoint { get { return this.Level < SkillPointCost.Length ? SkillPointCost[this.Level] : 0; } }
         public override int PrevRequiredPoint { get { return this.Level - 1 >= 0 && this.Level - 1 < SkillPointCost.Length ? SkillPointCost[this.Level - 1] : 0; } }
-        public override int MaxLevel { get { return 15; } }
+        public override int MaxLevel { get { return 14; } }
         public override int Tier { get { return 1; } }
     }
 
