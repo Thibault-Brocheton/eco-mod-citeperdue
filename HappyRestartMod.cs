@@ -128,7 +128,7 @@
                 }
 				catch (Exception e)
 				{
-					Log.Write(new LocString(string.Format("CitePerdue - Error during same game !")));
+					Log.Write(new LocString(string.Format("CitePerdue - Error during same game ! " + e.ToString())));
 					Console.WriteLine();
 				}
             });
